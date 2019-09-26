@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name = "library-server")
 public interface LibraryFeighClientBook {
 
-    @GetMapping("/find_book/{ID}")
-    public Book findBookById(@PathVariable("ID") Integer bookId);
+    @GetMapping("/find_book/id}")
+    public Book findBookById(@PathVariable("id") Integer bookId);
 }

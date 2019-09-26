@@ -1,15 +1,10 @@
 package com.cursor.libraryserver.service;
 
-import com.cursor.libraryserver.model.Author;
 import com.cursor.libraryserver.model.Book;
 
 import java.util.List;
 
-public interface LibraryService {
-
-    void addAuthor(Author author);
-
-    void deleteAuthor(long authorId);
+public interface BookService {
 
     void addBook(Book book);
 
@@ -19,7 +14,6 @@ public interface LibraryService {
 
     List<Book> getBooksByAuthor(long authorId);
 
-    void updateBook(long oldBookId, Book book);
+    Book updateBook(long oldBookId, Book book);
 
-    void updateAuthor(long oldAuthorId, Author author);
 }

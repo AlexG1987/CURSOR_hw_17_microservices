@@ -15,8 +15,8 @@ public class BookServiceController {
     @Autowired
     private LibraryFeighClientBook libraryFeighClientBook;
 
-    @GetMapping("/find_book/{ID}")
-    public Book findBookById(@PathVariable("ID") Integer bookId){
+    @GetMapping("/find_book/{id}")
+    public Book findBookById(@PathVariable("id") Integer bookId){
         return libraryFeighClientBook.findBookById(bookId);
     }
 
